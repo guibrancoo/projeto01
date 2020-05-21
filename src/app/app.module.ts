@@ -6,14 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { BitconBrlComponent } from './bitcon-brl/bitcon-brl.component';
-import { GithubComponent } from './github/github.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     BitconBrlComponent,
-    GithubComponent
   ],
   imports: [
     BrowserModule,
