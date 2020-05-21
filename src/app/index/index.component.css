@@ -1,3 +1,24 @@
+.first{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1000px;
+}
+
+.first h1, h2{
+    margin: 30px 0;
+    color: #4730CF;
+    padding-bottom: 20px;
+}
+
+.first h2{
+    border-bottom: #4730CF 1px solid;
+}
+
+.first img{
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
 .principal{
     display: flex;
     justify-content: space-between;
@@ -8,6 +29,7 @@
 .principal .card{
     flex: 1;
     max-width: 350px;
+    margin-bottom: 5%;
 }
 
 .btn {
