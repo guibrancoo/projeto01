@@ -1,15 +1,23 @@
-<span class="sr-only">(current)</span>
-<h1>Cotação do Bitcoin em Reais (R$)</h1>
-<div *ngIf="currentPrice">
-  <h2>Horário</h2>
-  <div>{{this.currentPrice.time.updated}}</div>
-  <h2>Preço Atual em Real</h2>
-  <h4>R$&nbsp;{{this.currentPrice.bpi.BRL.rate}}</h4>
-  <h2>Preço Atual em Dólar</h2>
-  <h4>USD&nbsp;{{this.currentPrice.bpi.USD.rate}}</h4>
-</div>
-<hr/>
-<div>
-  <input type="button" value="Atualizar" (click)="update()" />
-  <span>&nbsp;Atualizado as {{this.lastUpdate | date:"mediumTime"}}</span>
-</div>
+  <h1 class="titulo">Cotações do BitCoin</h1>
+  <p class="titulo">Página destinada a exibição das cotações do valor do bitcoin nas respectivas unidades monetárias.</p>
+  <div class="principal">
+    <div class="card text-center" style="width: 18rem;">
+      <img src="../assets/dolar.jpg" class="card-img-top" alt="Foto Real">
+      <div class="card-body">
+        <h5 class="card-title">Valor do Bitcoin em Dólar</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Última atualização as {{this.lastUpdate | date:"mediumTime"}}</h6>
+        <p class="card-text">USD {{this.currentPrice.bpi.USD.rate}}</p>
+        <input class="btn-primary" type="button" value="Atualizar Índices" (click)="update()" />
+      </div>
+    </div>
+
+    <div class="card text-center" style="width: 18rem;">
+      <img src="../assets/real.jpg" class="card-img-top" alt="Foto Real">
+      <div class="card-body">
+        <h5 class="card-title">Valor do Bitcoin em Real</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Última atualização as {{this.lastUpdate | date:"mediumTime"}}</h6>
+        <p class="card-text">R$ {{this.currentPrice.bpi.BRL.rate}}</p>
+        <input class="btn-primary" type="button" value="Atualizar Índices" (click)="update()" />
+      </div>
+    </div>
+  </div>
