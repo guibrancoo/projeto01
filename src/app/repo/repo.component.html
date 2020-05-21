@@ -1,0 +1,47 @@
+<h1 class="card-title">Guilherme Domingues Branco Pires</h1>
+
+<table >
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Descrição</th>
+      <th>Url</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let repositorio of repositorio">
+      <td>{{repositorio.id}}</td>
+      <td>{{repositorio.name}}</td>
+      <td>{{repositorio.description}}</td>
+      <td>{{repositorio.html_url}}</td>
+
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h1 class="card-title">Pedro Henrique Garcia Affonso</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Descrição</th>
+      <th>Url</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let repos of repos">
+      <td>{{repos.id}}</td>
+      <td>{{repos.name}}</td>
+      <td>{{repos.description}}</td>
+      <td>{{repos.html_url}}</td>
+
+    </tr>
+  </tbody>
+</table>

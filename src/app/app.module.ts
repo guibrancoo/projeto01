@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { BitconBrlComponent } from './bitcon-brl/bitcon-brl.component';
+import { RepoComponent } from './repo/repo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     BitconBrlComponent,
+    RepoComponent,
   ],
   imports: [
     BrowserModule,
