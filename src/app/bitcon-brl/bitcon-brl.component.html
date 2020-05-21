@@ -1,0 +1,14 @@
+<h1>Cotação do Bitcoin em Reais (R$)</h1>
+<div *ngIf="currentPrice">
+  <h2>Horário</h2>
+  <div>{{this.currentPrice.time.updated}}</div>
+  <h2>Preço Atual em Real</h2>
+  <h4>R$&nbsp;{{this.currentPrice.bpi.BRL.rate}}</h4>
+  <h2>Preço Atual em Dólar</h2>
+  <h4>USD&nbsp;{{this.currentPrice.bpi.USD.rate}}</h4>
+</div>
+<hr/>
+<div>
+  <input type="button" value="Atualizar" (click)="update()" />
+  <span>&nbsp;Atualizado as {{this.lastUpdate | date:"mediumTime"}}</span>
+</div>
