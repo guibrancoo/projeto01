@@ -1,13 +1,16 @@
-<h1 class="card-title">Guilherme Domingues Branco Pires</h1>
+<h1 class="titulo">Repositórios do GitHub</h1>
+<p class="titulo">Página destinada a exibição dos repositórios dos integrantes da grupo desenvolvedor da aplicação</p>
 
-<table >
-  <thead>
+<img src="../assets/guilherme.jpg" alt="Foto Guilherme">
+<h3 class="card-title">Guilherme Domingues Branco Pires</h3>
+
+<table class="table table-hover">
+  <thead class="thead-light">
     <tr>
-      <th>Id</th>
-      <th>Nome</th>
-      <th>Descrição</th>
-      <th>Url</th>
-
+      <th scope="col">#</th>
+      <th scope="col">Nome Repositório</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Disponível em</th>
     </tr>
   </thead>
   <tbody>
@@ -15,24 +18,22 @@
       <td>{{repositorio.id}}</td>
       <td>{{repositorio.name}}</td>
       <td>{{repositorio.description}}</td>
-      <td>{{repositorio.html_url}}</td>
-
+      <td><a target="_blank" href="{{repositorio.html_url}}">{{repositorio.html_url}}</a></td>
     </tr>
   </tbody>
 </table>
 
-<br>
 
-<h1 class="card-title">Pedro Henrique Garcia Affonso</h1>
+<img src="../assets/pedro.jpg" alt="Foto Pedro">
+<h3 class="card-title">Pedro Henrique Garcia Affonso</h3>
 
-<table>
-  <thead>
+<table class="table table-hover">
+  <thead class="thead-light">
     <tr>
-      <th>Id</th>
-      <th>Nome</th>
-      <th>Descrição</th>
-      <th>Url</th>
-
+      <th scope="col">#</th>
+      <th scope="col">Nome Repositório</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Disponível em</th>
     </tr>
   </thead>
   <tbody>
@@ -40,8 +41,7 @@
       <td>{{repos.id}}</td>
       <td>{{repos.name}}</td>
       <td>{{repos.description}}</td>
-      <td>{{repos.html_url}}</td>
-
+      <td><a target="_blank" href="{{repos.html_url}}">{{repos.html_url}}</a></td>
     </tr>
   </tbody>
 </table>

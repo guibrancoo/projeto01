@@ -32,12 +32,15 @@ export class RepoComponent implements OnInit {
 
   update() {
     this.http.get<Response>('https://api.github.com/users/pedrohgaffonso/repos')
+    // this.http.get<Responsev>('../assets/json/pedrohgaffonso') implementar devido a limitação de requisições do Git
        .subscribe(data => {
       this.repos = data;
     });
   }
   update2() {
     this.http.get<Responsev>('https://api.github.com/users/guibrancoo/repos')
+    // this.http.get<Responsev>('../assets/json/guibrancoo') implementar devido a limitação de requisições do Git
+    
        .subscribe(data => {
       this.repositorio = data;
     });

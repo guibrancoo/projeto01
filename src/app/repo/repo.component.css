@@ -1,7 +1,39 @@
-table {
+h1{
+  margin-top: 20px;
+  color: #4730CF;
+}
+
+.titulo{
+  text-align: center;
+  /* margin-top: 30px; */
+}
+
+img{
+  display: block;
+  float: left;
+  width: 30px;
+  margin-right: 10px;
+}
+
+table{
+  margin-bottom: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: #4730CF;
+  transition: ease 0.7s all;
+}
+
+a:hover{
+  color: rgb(22, 15, 63);
+  transition: ease 0.7s all;
+}
+
+/* table {
   border-collapse: collapse;
 }
 
 table, td, th {
   border: 3px solid black;
-}
+} */
